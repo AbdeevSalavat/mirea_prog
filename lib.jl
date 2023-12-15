@@ -42,7 +42,7 @@ function move_and_put!(r::Robot, side::HorizonSide)::Int # putmarkers_until_bord
     return n_steps
 end
 
-function along_border!(r::Robot, side::HorizonSide)::Int # move_until_border!
+function move_until_border!(r::Robot, side::HorizonSide)::Int # move_until_border!
     n_steps = 0
     while !isborder(r, side)
         n_steps += 1
